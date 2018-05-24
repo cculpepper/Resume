@@ -189,13 +189,13 @@
 \LoadClassWithOptions{article}
 
 \newif\if@line
-\newif\if@margin
+\newif\if@mmmargin
 
 \DeclareOption{line}{\@linetrue}
 \DeclareOption{centered}{\@linefalse}
 
-\DeclareOption{margin}{\@margintrue}
-\DeclareOption{overlapped}{\@marginfalse}
+\DeclareOption{mmmargin}{\@mmmargintrue}
+\DeclareOption{overlapped}{\@mmmarginfalse}
 
 \ExecuteOptions{overlapped,centered}
 \ProcessOptions\relax
@@ -301,7 +301,8 @@
 \newskip\sectionskip
 \newdimen\resumewidth
 
-\resumewidth=7.3in
+
+\resumewidth=7in
 \sectionskip=2.4ex plus 1ex minus -.2ex % values stolen from LaTeX
 
 \def\newsectionwidth#1{%
@@ -463,7 +464,7 @@
 \let\@@section\relax
 \def\ds@overlapped{\ifx\@@section\relax\newsectionwidth{0.5in}\let
   \@@section\unboxed@sectiontitle\fi}
-\def\ds@margin{\ifx\@@section\relax\newsectionwidth{1.3in}\let
+\def\ds@mmmargin{\ifx\@@section\relax\newsectionwidth{1.3in}\let
   \@@section\boxed@sectiontitle\fi}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -481,7 +482,7 @@
 %\input article.sty
 
 \if@line\ds@line\else\ds@centered\fi
-\if@margin\ds@margin\else\ds@overlapped\fi
+\if@mmmargin\ds@mmmargin\else\ds@overlapped\fi
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -829,15 +830,15 @@
 % with everything in the left of its column
 
 \@secpenalty = -500
-\topmargin 0pt
+%\topmargin 0pt
 %\botmargin 0.5in
 %\leftmargin 1in
-\headheight 0pt
-\headsep 0pt
-\textheight 11in
-\parindent 0pt
-\topmargin -0.5in
-\oddsidemargin -0.5in
+%\headheight 0pt
+%\headsep 0pt
+%\textheight 10in
+%\parindent 0pt
+%\topmargin -0.5in
+%\oddsidemargin -0.5in
 \evensidemargin 0pt
 \marginparwidth 0pt
 \parindent 0pt

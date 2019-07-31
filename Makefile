@@ -16,6 +16,9 @@ viewResume: CCulpepper-Resume.tex
 viewLetter: CCulpepper-CoverLetter.tex
 	latexmk -pvc -pdflatex='pdflatex -file-line-error -synctex=1' -pdf -r /home/chris/.latexmkrc CCulpepper-CoverLetter.tex
 
+viewRefs: CCulpepper-References.tex
+	latexmk -pvc -pdflatex='pdflatex -file-line-error -synctex=1' -pdf -r /home/chris/.latexmkrc CCulpepper-References.tex
+
 clean: 
 	- rm *.pdf
 	- rm *.aux

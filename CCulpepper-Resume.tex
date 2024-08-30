@@ -25,36 +25,36 @@
 	%A co-op position in the field of Computer Engineering for the Spring and Summer of 2016 for the purpose of furthering my education.  
 	%To obtain a co-op position doing electronic hardware design or embedded software programming in the Spring of 2016 in order to further my education in the Computer Engineering field. 
 	To continue my career in Electrical or Computer Engineering: 
-	designing electronic hardware, working with RF devices, or creating 
-	embedded software, preferably in the aerospace or subsurface domain.
+	solving interesting problems, designing electronic and/or RF hardware, 
+    or embedded software, preferably in the aerospace or subsurface domain.
  
 \section{EXPERIENCE} 
 {\sl Electrical Engineer} \hfill {\sl October 2019 - Present}\\
 	FTL Labs Corporation, Amherst MA
 	\begin{itemize}  \itemsep -2pt % reduce space between items
+		\item Created RF chain to sample RADAR magnetron TX pulses
+        \item Reverse engineered commercial RADAR to control magnetron
+            (UART, GPIO, RF Mixer, LNA)
 		\item Designed and built large li-ion battery for
 			underwater applications, designed with safety in mind
-		\item Developed and implemented battery test plan
-			for pressure, electrical, thermal and capacity
+		% \item Developed and implemented battery test plan
+		% 	for pressure, electrical, thermal and capacity
+        \item Designed, implemented acoustic threshold measurement system, 
+            with absolute SPL, HW + SW
 		% \item Following a battery assembly incident, led the 
 		% 	team in redesign for additional assembly safety
 		\item Designed interface electronics, analog piezo
 			load cell interface, COTS LED module dimmer
-        \item Designed and implemented acoustic threshold measurement system, 
-            with absolute volume SPL
 		\item Designed PCB to expand IO in a ruggedized product,
 			solenoid drive, 4-20mA, protected IO
-		\item Created RF chain to sample RADAR magnetron TX pulses
-        \item Reverse engineered commercial RADAR to implement our own control 
-            (Serial, GPIO, RF LNA)
 		% \item Solved manufacturing problems to increase production
 			% speed
 		% \item Personally ran small-scale assembly and production (12
 			% units)
 		\item Reverse engineered commercial laser diode driver to
 			implement circuit
-		\item Designed control loop to keep laser diode at constant
-			optical power over temperature
+		% \item Designed control loop to keep laser diode at constant
+		% 	optical power over temperature
 		% \item Created large physical contaminant database, managed
 			% spectographic collection
 		% \item Designed an automated data collection system to treat jet
@@ -62,17 +62,17 @@
 		% \item Designed mechanical hardware for small scale production
 	\end{itemize}
 	\vspace{-10pt}
-{\sl Senior Electrical Engineer (Previous Systems Engineer , Co-Op)} \hfill
+    {\sl Senior Electrical Engineer } \hfill
 {\sl Coop 2013-2017, FT 2017-2019}\\
 	General Dynamics Mission Systems, Pittsfield MA
 	\begin{itemize}  \itemsep -2pt % reduce space between items
 		\item Developed and executed evaluation and qualification tests for inherited hardware
+		\item Performed software and systems testing on high-integrity mission-critical software
+	 %\item Managed requirements and test cases
 		\item Performed integration and repair operations on legacy hardware
 		%\item Diagnosed build issues with hardware and software installations at local lab, as well and at customer locations
 		\item Performed tasking at customer locations and pre-deployment locations
 		% \item Go-to person in the lab to diagnose and troubleshoot weird hardware and installation issues
-		\item Performed software and systems testing on high-integrity mission-critical software
-	 %\item Managed requirements and test cases
 		%\item Developed automated testing tracker that was used to present testing progress to management
 		%\item Developed an application to measure and track 
 		%ability	code base sizes to assist with the peer review process
@@ -84,7 +84,7 @@
 		\item Designed and built hardware to test bias-T HD cameras
 		\item Created software to automate the creation of trouble reports
 		% \item Developed tests to test flight avionics hardware
-		% \item Troubleshot issues with avionics test racks
+		\item Troubleshot issues with avionics test racks
 	\end{itemize}
 	%\vspace{-5pt}
  
@@ -118,9 +118,9 @@
 						% \item[] Computer Architecture
 						\item[] Digital Signal Processing
 						%\item[] Interface and Digital Electronics
-						% \item[] Data Communication and Networks
+						\item[] Data Communication and Networks
 						%\item[] Introduction to Software Engineering
-						\item[] Digital System Design
+						% \item[] Digital System Design
 						% \item[] Assembly Language Programming
 						%\item[] Computer Science
 						%\item[] Calculus I-III
@@ -160,10 +160,17 @@
 	\vspace{-10pt}
     {\sl FPGA SDR RF Exploration (in progress)}
 		\begin{itemize} \itemsep -2pt
-			\item Building FPGA SDR exploration system to learn RF, VHDL, DSP
+			\item Building FPGA SDR exploration system to learn RF, VHDL, DSP, FPGA networking
             \item Initially using RF "lego" modules, transitioning to custom PCBs
-            \item Created custom drivers for frequency generation, ADC, I2S
+            \item Created custom VHDL drivers for frequency generation, ADC, I2S
             \item Currently writing custom DMA SG drivers to send data to "real" computer for display
+		\end{itemize}
+	\vspace{-10pt}
+    {\sl Home Networking (Homelab)}
+		\begin{itemize} \itemsep -2pt
+			\item Focus on internal and external services running on VMs, Linux, FreeBSD
+            \item DIY'ed cables, on and off-site backup, storage
+            \item VLAN seperation, hardware PCI passthrough, PoE, NT4
 		\end{itemize}
 	\vspace{-10pt}
 	{\sl Yaesu VX-8 Battery}
@@ -194,11 +201,12 @@
 			% \item Currently developing software, will include master/slave arbitration, USB connectivity
 		% \end{itemize}
 	% \vspace{-10pt}
-	{\sl Wideband Oxygen Sensor Controller}
-		\begin{itemize} \itemsep -2pt
-			\item Designed, built and programmed sensor controller that measured oxygen concentration
-			\item Incorporated PID loops to keep a sensor at a constant temperature and oxygen concentration
-		\end{itemize}
+	%\vspace{-10pt}
+	% {\sl Wideband Oxygen Sensor Controller}
+	% 	\begin{itemize} \itemsep -2pt
+	% 		\item Designed, built and programmed sensor controller that measured oxygen concentration
+	% 		\item Incorporated PID loops to keep a sensor at a constant temperature and oxygen concentration
+	% 	\end{itemize}
 	%\vspace{-10pt}
 	%{\sl High Altitude Balloon Telemetry Tracker }
 		%\begin{itemize} \itemsep -2pt
@@ -222,13 +230,15 @@
 			%\item Worked with partners to create a line-following autonomous vehicle
 			%\item Required embedded programming, image processing and control theory
 		%\end{itemize}
-	\vspace{-10pt}
+	% \vspace{-10pt}
 	{Various Other Projects:}
 		\begin{multicols}{2}
 			\begin{itemize}
 				\itemsep -2pt
+				\item[] Soviet 120mm\textsuperscript{2} RGBW VFD driver
 				\item[] Motorcycle Speedometer
-				\item[] Metal Melting Foundry
+				% \item[] Metal Melting Foundry
+				% \item[] Metal Melting Foundry
 				% \item[] RIT Rocket Initiative Power Board
 				% \item[] 3D Printer Modifications
 				\item[] Racecar Rollcage and Endurance Prep
@@ -260,14 +270,15 @@
 				%\item[] C++
 				\item[] C
 				\item[] Kicad PCB Design Software
-				\item[] Linux
+                \item[] Linux (Arch, Debian, Red Hat)
 				\item[] VHDL
 				\item[] Python
+				\item[] Wireshark
 				%\item[] Java
 				\item[] AutoIt Automation Scripting
 				\item[] OpenSCAD and FreeCAD CAD Software
 				%\item[] Microsoft Office
-				\item[] Visual Basic for Applications (VBA)
+				% \item[] Visual Basic for Applications (VBA)
 				% \item[] ARM \& HCS12 Assembly
 				\item[] DOORs Requirement Management
 				\item[] Networking Equipment Configuration
@@ -297,12 +308,12 @@
 	\item[]Amateur Radio Extra
 	%\item[]K2GXT RIT Amateur Radio Club
 	% \item[]Motorcycle and automobile repair
-	%\item[]Camping, hiking, and dancing
+	\item[]Camping, hiking, and dancing
 	\item[]3D Printering
 	\item[]Photography (Analog, digital)
-	% \item[]Holography (early stages)
+	\item[]Holography (early stages)
 	\item[]Carbon fiber layup
-	\item[]Working towards pilot license
+	% \item[]Working towards pilot license
 	\item[]Licked thing that was in space
 
 	\end{itemize}
